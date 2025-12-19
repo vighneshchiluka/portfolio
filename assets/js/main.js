@@ -16,20 +16,6 @@ buttons.forEach(button => {
   });
 });
 
-// ---------------lenis-smooth-scrolling---------------
-
-const lenis = new Lenis({
-    duration: 1.2,        // scroll speed
-    smooth: true
-  });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-
 // ----------------------hamburger-menu-------------------
 
 
