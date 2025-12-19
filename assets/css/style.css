@@ -1,1 +1,441 @@
+/* ==================================================
+   RESET & BASE STYLES
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    /* adjust for navbar height */
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--background-color);
+    /* black theme */
+    color: var(--secondary-color);
+    /* white text */
+    line-height: 1.6;
+}
+
+/* ==================================================
+   CSS VARIABLES (ROOT)
+================================================== */
+:root {
+    --background-color: #000;
+    --primary-color: #111;
+    --secondary-color: #fff;
+    --blue-color: #6cace4;
+    --grey-color: #c4c4c4;
+    --Inter-sans: "Inter", sans-serif;
+    --Dm-sans: "DM Sans", sans-serif;
+}
+
+/* ==================================================
+   TYPOGRAPHY & UTILITIES
+================================================== */
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.type-16 {
+    font-size: 16px;
+}
+
+.type-18 {
+    font-size: 18px;
+}
+
+.type-24 {
+    font-size: 24px;
+}
+
+.type-96 {
+    font-size: 96px;
+}
+
+.type-300 {
+    font-weight: 300 !important;
+}
+
+.type-600 {
+    font-weight: 600;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.bs-sub-heading {
+    font-family: "Inter", sans-serif;
+    line-height: 1.2;
+}
+
+.type-gradient-1 {
+    background: linear-gradient(90deg, #FFCF67, #33d2ff, #D3321D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.type-clr-blue {
+    color: var(--blue-color) !important;
+}
+
+.type-clr-grey {
+    color: var(--grey-color) !important;
+}
+
+/* ==================================================
+   SPACING UTILITIES
+================================================== */
+.mb-0 {
+    margin-bottom: 0 !important
+}
+
+.mb-1 {
+    margin-bottom: .25rem !important
+}
+
+.mb-2 {
+    margin-bottom: .8rem !important
+}
+
+.mb-3,
+.me-3 {
+    margin-bottom: 1rem !important
+}
+
+.mb-4 {
+    margin-bottom: 1.6rem !important
+}
+
+.mb-5 {
+    margin-bottom: 3.2rem !important
+}
+
+.mb-6 {
+    margin-bottom: 5rem !important
+}
+
+.pt-2 {
+    padding-top: 5px !important
+}
+
+.pt-4 {
+    padding-top: 2.4rem !important
+}
+
+/* ==================================================
+   LAYOUT HELPERS
+================================================== */
+.lyt-section .wrapper {
+    padding: 115px 0 !important;
+}
+
+.wrapper {
+    padding: 50px 0px !important;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ==================================================
+   NAVBAR / HEADER
+================================================== */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+    z-index: 1000;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+nav ul li a {
+    font-family: var(--Inter-sans);
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--blue-color);
+}
+
+.logo-txt {
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* ==================================================
+   HAMBURGER MENU
+================================================== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--secondary-color);
+    transition: 0.3s;
+}
+
+/* ==================================================
+   HERO / HOME SECTION
+================================================== */
+.hero-section {
+    padding: 100px 0 50px;
+    background-color: var(--primary-color);
+}
+
+.bs-para {
+    color: var(--secondary-color);
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+
+.bs-heading {
+    color: var(--secondary-color);
+    line-height: 1.4;
+    font-family: var(--Dm-sans);
+}
+
+.hero-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #33d2ff;
+    box-shadow: 0 0 15px rgba(51, 210, 255, 0.5);
+}
+
+.bs-hover-icon{
+    width: 200px;
+    padding: 5px 15px;
+    border-radius: 25px;
+    border: none;
+    border: 2px solid #33d2ff;
+    box-shadow: 0 0 15px rgba(51, 210, 255, 0.5);
+    font-family: var(--Inter-sans);
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+#footerid {
+    border-top: 1px solid #ccc;
+}
+
+#footerid .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 40px;
+}
+
+#footerid .container {
+    padding-bottom: 50px;
+}
+
+#profile-link {
+    color: var(--blue-color);
+    text-decoration: underline;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.contact-txt {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.copyrights-txt {
+    font-weight: 300;
+}
+
+.contact-social-icons {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    justify-content: center;
+    grid-gap: 25px;
+}
+
+.contact-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.contact-social-icons a i {
+    display: flex;
+    font-size: 2.5rem;
+}
+
+.contact-social-icons a:hover {
+    color: var(--blue-color);
+}
+
+/* ==================================================
+   PROJECTS SECTION
+================================================== */
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+}
+
+.project-img-box {
+    overflow: hidden;
+    height: 214px;
+}
+
+.project-img-box img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-img-box img:hover,
+.project-img-box img:focus {
+    transform: scale(1.3);
+}
+
+.project-content-box h3 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-content-box p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.project-content-box a {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.project-content-box a i {
+    font-size: 2rem;
+}
+
+/* ==================================================
+   EDUCATION / QUALIFICATIONS
+================================================== */
+#qualifications .container {
+    border-bottom: 1px solid #ccc;
+}
+
+/* ==================================================
+   WORK EXPERIENCE (TABS)
+================================================== */
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.tab-button {
+    padding: 16px 36px;
+    background: transparent;
+    color: var(--secondary-color);
+    border-color: transparent;
+    border-left: 2px solid var(--secondary-color);
+    font-size: 1.8rem;
+    font-family: var(--Inter-sans);
+    font-weight: 300;
+    text-align: left;
+}
+
+.tab-button.active {
+    background-color: #1f1e1e;
+}
+
+.role-exp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-content ul {
+    padding-left: 3.2rem;
+}
+
+.tab-content ul li {
+    padding-bottom: 1.5rem;
+}
+
+.tab-content-wrapper {
+    width: 70%;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
