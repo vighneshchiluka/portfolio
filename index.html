@@ -2,80 +2,93 @@
 <html lang="en">
 
 <head>
-    <!-- Basic -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Basic -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title -->
-    <title>Vighnesh Chiluka | Front-End Developer Portfolio</title>
+  <!-- Title -->
+  <title>Vighnesh Chiluka | Front-End Developer Portfolio</title>
 
-    <!-- SEO Meta -->
-    <meta name="description"
-        content="Vighnesh Chiluka is a front-end developer skilled in HTML, CSS, Bootstrap, JavaScript, PHP, SQL, and Python. Explore responsive UI projects and modern web interfaces." />
+  <!-- SEO Meta -->
+  <meta name="description"
+        content="Vighnesh Chiluka is a front-end developer skilled in HTML, CSS, Bootstrap, JavaScript, PHP, SQL, and Python. Explore responsive UI projects and modern web interfaces.">
+  <meta name="keywords"
+        content="Vighnesh Chiluka, front-end developer, HTML CSS developer, Bootstrap developer, JavaScript developer, PHP developer, SQL, Python, responsive web design, portfolio website">
+  <meta name="author" content="Vighnesh Chiluka">
+  <meta name="robots" content="index, follow">
 
-    <meta name="keywords"
-        content="Vighnesh Chiluka, front-end developer, HTML CSS developer, Bootstrap developer, JavaScript developer, PHP developer, SQL, Python, responsive web design, portfolio website" />
-
-    <meta name="author" content="Vighnesh Chiluka">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Vighnesh Chiluka | Front-End Developer Portfolio">
-    <meta property="og:description"
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vighnesh Chiluka | Front-End Developer Portfolio">
+  <meta property="og:description"
         content="Front-end developer portfolio showcasing responsive websites and modern UI built with HTML, CSS, Bootstrap, JavaScript, PHP, SQL, and Python.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="/assets/images/og-image.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Vighnesh Chiluka Front-End Developer Portfolio Preview">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+        content="https://vighneshchiluka.github.io/portfolio/assets/images/og-image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+        content="Vighnesh Chiluka Front-End Developer Portfolio Preview">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vighnesh Chiluka | Front-End Developer Portfolio">
-    <meta name="twitter:description"
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vighnesh Chiluka | Front-End Developer Portfolio">
+  <meta name="twitter:description"
         content="Explore responsive web development projects and modern UI interfaces by Vighnesh Chiluka.">
-    <meta name="twitter:image" content="/assets/images/og-image.webp">
+  <meta name="twitter:image"
+        content="https://vighneshchiluka.github.io/portfolio/assets/images/og-image.webp">
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.webp">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.webp">
 
   <!-- Preconnect Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts (non-render blocking) -->
-    <link rel="preload"
+  <!-- Google Fonts (non-render blocking) -->
+  <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        as="style" onload="this.rel='stylesheet'">
-
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap" as="style"
+        as="style"
         onload="this.rel='stylesheet'">
 
-    <!-- Font Awesome (non-render blocking) -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        as="style" onload="this.rel='stylesheet'">
+  <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap"
+        as="style"
+        onload="this.rel='stylesheet'">
 
-    <!-- Local CSS (non-blocking) -->
-    <link rel="preload" href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+  <!-- Font Awesome -->
+  <link rel="preload"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        as="style"
+        onload="this.rel='stylesheet'">
 
-    <link rel="preload" href="assets/css/media.css" as="style" onload="this.rel='stylesheet'">
+  <!-- Local CSS -->
+  <link rel="preload"
+        href="assets/css/style.css"
+        as="style"
+        onload="this.rel='stylesheet'">
 
-    <!-- Fallback for users with JS disabled -->
-    <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/media.css">
-    </noscript>
+  <link rel="preload"
+        href="assets/css/media.css"
+        as="style"
+        onload="this.rel='stylesheet'">
 
-    <!-- JavaScript -->
-    <script src="./assets/js/main.js" defer></script>
+  <!-- No-JS fallback -->
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+  </noscript>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js" defer></script>
 </head>
+
 
 <body>
 
