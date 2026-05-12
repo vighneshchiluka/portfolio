@@ -2,91 +2,77 @@
 <html lang="en">
 
 <head>
-  <!-- Basic -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Title -->
-  <title>Vighnesh Chiluka | Front-End Developer Portfolio</title>
+    <!-- Title -->
+    <title>Vighnesh Chiluka | Front-End Developer Portfolio</title>
 
-  <!-- SEO Meta -->
-  <meta name="description"
+    <!-- SEO Meta -->
+    <meta name="description"
         content="Vighnesh Chiluka is a front-end developer skilled in HTML, CSS, Bootstrap, JavaScript, PHP, SQL, and Python. Explore responsive UI projects and modern web interfaces.">
-  <meta name="keywords"
+    <meta name="keywords"
         content="Vighnesh Chiluka, front-end developer, HTML CSS developer, Bootstrap developer, JavaScript developer, PHP developer, SQL, Python, responsive web design, portfolio website">
-  <meta name="author" content="Vighnesh Chiluka">
-  <meta name="robots" content="index, follow">
+    <meta name="author" content="Vighnesh Chiluka">
+    <meta name="robots" content="index, follow">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Vighnesh Chiluka | Front-End Developer Portfolio">
-  <meta property="og:description"
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vighnesh Chiluka | Front-End Developer Portfolio">
+    <meta property="og:description"
         content="Front-end developer portfolio showcasing responsive websites and modern UI built with HTML, CSS, Bootstrap, JavaScript, PHP, SQL, and Python.">
-  <meta property="og:type" content="website">
-  <meta property="og:image"
-        content="https://vighneshchiluka.github.io/portfolio/assets/images/og-image.webp">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt"
-        content="Vighnesh Chiluka Front-End Developer Portfolio Preview">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vighneshchiluka.github.io/portfolio/assets/images/og-image.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Vighnesh Chiluka Front-End Developer Portfolio Preview">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vighnesh Chiluka | Front-End Developer Portfolio">
-  <meta name="twitter:description"
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vighnesh Chiluka | Front-End Developer Portfolio">
+    <meta name="twitter:description"
         content="Explore responsive web development projects and modern UI interfaces by Vighnesh Chiluka.">
-  <meta name="twitter:image"
-        content="https://vighneshchiluka.github.io/portfolio/assets/images/og-image.webp">
+    <meta name="twitter:image" content="https://vighneshchiluka.github.io/portfolio/assets/images/og-image.webp">
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="apple-touch-icon.webp">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.webp">
 
-  <!-- Preconnect Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Google Fonts (non-render blocking) -->
-  <link rel="preload"
+    <!-- Google Fonts (non-render blocking) -->
+    <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        as="style"
+        as="style" onload="this.rel='stylesheet'">
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap" as="style"
         onload="this.rel='stylesheet'">
 
-  <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap"
-        as="style"
-        onload="this.rel='stylesheet'">
+    <!-- Font Awesome -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        as="style" onload="this.rel='stylesheet'">
 
-  <!-- Font Awesome -->
-  <link rel="preload"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        as="style"
-        onload="this.rel='stylesheet'">
+    <!-- Local CSS -->
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
 
-  <!-- Local CSS -->
-  <link rel="preload"
-        href="assets/css/style.css"
-        as="style"
-        onload="this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/media.css" as="style" onload="this.rel='stylesheet'">
 
-  <link rel="preload"
-        href="assets/css/media.css"
-        as="style"
-        onload="this.rel='stylesheet'">
+    <!-- No-JS fallback -->
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+    </noscript>
 
-  <!-- No-JS fallback -->
-  <noscript>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media.css">
-  </noscript>
-
-  <!-- JavaScript -->
-  <script src="assets/js/main.js" defer></script>
+    <!-- JavaScript -->
+    <script src="assets/js/main.js" defer></script>
 </head>
 
 
@@ -106,7 +92,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="./assets/Vighnesh-Chiluka-Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+                    <li><a href="./assets/Vighnesh_Chiluka.pdf" target="_blank" rel="noopener">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -134,14 +120,21 @@
                     <p class="bs-para type-16 type-300 mb-4">Hey, I'm</p>
                     <h1 class="bs-heading type-96 type-600 type-gradient-1 mb-3">Vighnesh Chiluka</h1>
                     <p class="bs-para type-18 type-300 mb-5">
-                       I’m a Front-End Developer skilled in HTML, CSS, JavaScript, Bootstrap, PHP, SQL, Python, and Git. I build responsive, user-focused web applications with clean, maintainable code and strong performance. Passionate about growing into a Full Stack Developer by strengthening backend development skills and building scalable, efficient interfaces.
+                        I’m a Front-End Developer with 3+ years of experience in building responsive, scalable, and
+                        user-focused web applications using HTML, CSS, JavaScript, Bootstrap, PHP, SQL, and Git. I enjoy
+                        creating clean, maintainable code and optimizing performance to deliver smooth user experiences.
+                        Passionate about continuous learning and problem-solving, I’m currently expanding my backend
+                        development skills to grow into a Full Stack Developer and build efficient, real-world
+                        applications.
                     </p>
-                    <button class="bs-hover-icon type-24 type-300 mb-2"><a href="https://www.linkedin.com/in/vighneshchiluka/" target="_blank">Say hi</a></button>
+                    <button class="bs-hover-icon type-24 type-300 mb-2"><a
+                            href="https://www.linkedin.com/in/vighneshchiluka/" target="_blank">Say hi</a></button>
                 </div>
 
                 <div class="about-img">
                     <img src="./assets/images/profile-pic.webp" alt="Vighnesh Chiluka Front-End Developer"
-                        title="Vighnesh Chiluka – Front-End Developer" width="300" height="300" loading="eager" fetchpriority="high" decoding="async">
+                        title="Vighnesh Chiluka – Front-End Developer" width="300" height="300" loading="eager"
+                        fetchpriority="high" decoding="async">
                 </div>
             </div>
         </section>
@@ -174,15 +167,20 @@
                             </p>
 
                             <ul class="bs-para type-16 type-300 type-clr-grey">
-                                <li>Gained hands-on experience in front-end and back-end web development using HTML5,
-                                    CSS3,
-                                    JavaScript, Bootstrap, PHP, and SQL databases.</li>
-                                <li>Developed and integrated a ticketing system within ERP software, streamlining issue
-                                    tracking, enhancing workflow efficiency, and improving team communication.</li>
-                                <li>Optimized website performance through advanced tools such as Google PageSpeed
-                                    Insights
-                                    and GTmetrix, achieving faster load times and improved SEO rankings.</li>
-                                <li>Acquired practical experience with version control systems, including Git.</li>
+                                <li>Developed and maintained full-stack web applications using HTML5, CSS3, JavaScript
+                                    (ES6+), Bootstrap, PHP, and MySQL, ensuring responsive and scalable solutions.</li>
+
+                                <li>Designed and implemented an ERP-based ticket raising system for issue tracking, task
+                                    management, and team communication, improving workflow efficiency.</li>
+
+                                <li>Built a real-time chatbot for ERP systems using JavaScript, Node.js, WebSockets,
+                                    PHP, and MySQL, enhancing automation and user interaction.</li>
+
+                                <li>Optimized website performance and SEO using Google PageSpeed Insights and GTmetrix,
+                                    reducing load times and improving performance.</li>
+
+                                <li>Utilized Git for version control and collaborative development, ensuring clean code
+                                    management and smooth deployment workflows.</li>
                             </ul>
                         </div>
 
@@ -291,7 +289,7 @@
                     Projects
                 </h2>
 
-<div class="row">
+                <div class="row">
 
                     <!-- Project 1 -->
                     <div class="project-tile">
@@ -368,7 +366,8 @@
                     <!-- Project 4 -->
                     <div class="project-tile">
                         <div class="project-img-box">
-                            <a href="https://vighneshchiluka.github.io/rosegoldbanquethall/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://vighneshchiluka.github.io/rosegoldbanquethall/" target="_blank"
+                                rel="noopener noreferrer">
                                 <img src="./assets/images/rosegoldbanquethal.webp" width="380" height="214"
                                     loading="lazy" decoding="async" alt="Rose Gold Banquet Hall Website in Mira Road">
                             </a>
@@ -376,8 +375,8 @@
                         <div class="project-content-box">
                             <h3>
                                 Rose Gold Banquet Hall
-                                <a href="https://vighneshchiluka.github.io/rosegoldbanquethall/" target="_blank" rel="noopener noreferrer"
-                                    aria-label="Visit Rose Gold Banquet Hall website">
+                                <a href="https://vighneshchiluka.github.io/rosegoldbanquethall/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Visit Rose Gold Banquet Hall website">
                                     <i class="fa-solid fa-link" aria-hidden="true"></i>
                                 </a>
                             </h3>
@@ -414,6 +413,36 @@
                         </div>
                     </div>
 
+                    <!-- Project 6 -->
+                    <div class="project-tile">
+                        <div class="project-img-box">
+                            <a href="https://vighneshchiluka.github.io/chatbot_app/frontend/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="./assets/images/chatbot_ui.webp" width="380" height="214" loading="lazy"
+                                    decoding="async" alt="ERP Chatbot Application">
+                            </a>
+                        </div>
+
+                        <div class="project-content-box">
+                            <h3>
+                                ERP Real-Time Chatbot Application
+                                <a href="https://vighneshchiluka.github.io/chatbot_app/frontend/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Visit ERP Chatbot Application">
+                                    <i class="fa-solid fa-link" aria-hidden="true"></i>
+                                </a>
+                            </h3>
+
+                            <p>
+                                Real-time ERP chatbot application developed for internal team communication,
+                                enabling instant messaging, file sharing, and seamless user interaction through
+                                a responsive and user-friendly interface.
+                            </p>
+
+                            <span class="project-tech">HTML5 - PHP - Node.js -
+                                WebSockets</span>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -436,7 +465,7 @@
                 </div>
 
                 <div class="col-lg-5">
-                         <div class="contact-social-icons pt-4">
+                    <div class="contact-social-icons pt-4">
                         <a href="mailto:vighnesh.chiluka25@gmail.com" aria-label="Send email to Vighnesh Chiluka"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
@@ -464,4 +493,5 @@
     </footer>
 
 </body>
+
 </html>
