@@ -1,6 +1,6 @@
 # 🌐 Vighnesh Chiluka | Portfolio Website
 
-A modern, responsive portfolio website built using HTML, CSS, and JavaScript. Designed to showcase my web development skills, projects, technical expertise, and professional experience with a strong focus on performance, responsiveness, and SEO best practices.
+A modern and responsive portfolio website developed by Vighnesh Chiluka, a Web Developer at Ferrobend. Built using HTML, CSS, and JavaScript to showcase web development projects, responsive website design, frontend development skills, technical expertise, and professional experience.
 
 ## 🚀 Features
 
